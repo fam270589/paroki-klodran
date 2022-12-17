@@ -1,0 +1,85 @@
+.container {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1280px;
+	padding: 0.7rem 1rem;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.logoWrapper {
+	font-weight: bold;
+	line-height: 1;
+}
+
+.small {
+	font-size: 0.7rem;
+}
+
+.menu {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.menu:hover {
+  color: burlywood;
+}
+
+.menuMobile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.menuButton {
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.menusMOpen {
+	background: white;
+	text-align: right;
+	margin-top: 2rem;
+	width: rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+	line-height: 2.5;
+	padding: 1rem 0.5rem 1rem 1rem;
+}
+
+.menusMClosed {
+	display: none;
+}
+
+.menuDesktop {
+	display: none;
+}
+
+@media (min-width: 640px) {
+	.menuMobile {
+		display: none;
+	}
+	.menuDesktop {
+		display: flex;
+		width: 50%;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+@media (min-width: 960px) {
+	.container {
+		padding-inline: 2rem;
+	}
+  .menu {
+    font-size: 1rem;
+  }
+	.menuDesktop {
+		width: 35%;
+	}
+}
