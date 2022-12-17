@@ -1,6 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
+import Artikel from "../components/artikel/Artikel";
+import Informasi from "../components/informasi/Informasi";
+import Kontak from "../components/kontak/Kontak";
+import Layout from "../components/layout/Layout";
+import Media from "../components/media/Media";
 import Navbar from "../components/navbar/Navbar";
+import Profil from "../components/profil/Profil";
 
 import styles from "../styles/Home.module.css";
 
@@ -41,91 +47,18 @@ export default function PageHome() {
 					</div>
 				</div>
 
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis,
-					numquam quae nostrum ullam voluptatum distinctio maxime eos voluptate
-					ea ad quos repudiandae, deserunt non magni magnam pariatur,
-					perferendis aut libero incidunt similique aliquam error recusandae
-					provident modi. Dolorum, modi. Asperiores vel natus neque accusamus
-					iure officia quis amet. Expedita odit maiores debitis explicabo, odio
-					est? Ratione necessitatibus laboriosam officia debitis corrupti
-					doloremque reprehenderit quisquam quibusdam obcaecati maxime, expedita
-					libero facere maiores, magnam alias explicabo quo repudiandae? Quia
-					nam maiores recusandae expedita, aperiam fugiat excepturi atque
-					commodi inventore fuga officiis, consectetur culpa laboriosam, harum
-					mollitia magnam. Distinctio pariatur dolores saepe nesciunt.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis,
-					numquam quae nostrum ullam voluptatum distinctio maxime eos voluptate
-					ea ad quos repudiandae, deserunt non magni magnam pariatur,
-					perferendis aut libero incidunt similique aliquam error recusandae
-					provident modi. Dolorum, modi. Asperiores vel natus neque accusamus
-					iure officia quis amet. Expedita odit maiores debitis explicabo, odio
-					est? Ratione necessitatibus laboriosam officia debitis corrupti
-					doloremque reprehenderit quisquam quibusdam obcaecati maxime, expedita
-					libero facere maiores, magnam alias explicabo quo repudiandae? Quia
-					nam maiores recusandae expedita, aperiam fugiat excepturi atque
-					commodi inventore fuga officiis, consectetur culpa laboriosam, harum
-					mollitia magnam. Distinctio pariatur dolores saepe nesciunt.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis,
-					numquam quae nostrum ullam voluptatum distinctio maxime eos voluptate
-					ea ad quos repudiandae, deserunt non magni magnam pariatur,
-					perferendis aut libero incidunt similique aliquam error recusandae
-					provident modi. Dolorum, modi. Asperiores vel natus neque accusamus
-					iure officia quis amet. Expedita odit maiores debitis explicabo, odio
-					est? Ratione necessitatibus laboriosam officia debitis corrupti
-					doloremque reprehenderit quisquam quibusdam obcaecati maxime, expedita
-					libero facere maiores, magnam alias explicabo quo repudiandae? Quia
-					nam maiores recusandae expedita, aperiam fugiat excepturi atque
-					commodi inventore fuga officiis, consectetur culpa laboriosam, harum
-					mollitia magnam. Distinctio pariatur dolores saepe nesciunt.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis,
-					numquam quae nostrum ullam voluptatum distinctio maxime eos voluptate
-					ea ad quos repudiandae, deserunt non magni magnam pariatur,
-					perferendis aut libero incidunt similique aliquam error recusandae
-					provident modi. Dolorum, modi. Asperiores vel natus neque accusamus
-					iure officia quis amet. Expedita odit maiores debitis explicabo, odio
-					est? Ratione necessitatibus laboriosam officia debitis corrupti
-					doloremque reprehenderit quisquam quibusdam obcaecati maxime, expedita
-					libero facere maiores, magnam alias explicabo quo repudiandae? Quia
-					nam maiores recusandae expedita, aperiam fugiat excepturi atque
-					commodi inventore fuga officiis, consectetur culpa laboriosam, harum
-					mollitia magnam. Distinctio pariatur dolores saepe nesciunt.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis,
-					numquam quae nostrum ullam voluptatum distinctio maxime eos voluptate
-					ea ad quos repudiandae, deserunt non magni magnam pariatur,
-					perferendis aut libero incidunt similique aliquam error recusandae
-					provident modi. Dolorum, modi. Asperiores vel natus neque accusamus
-					iure officia quis amet. Expedita odit maiores debitis explicabo, odio
-					est? Ratione necessitatibus laboriosam officia debitis corrupti
-					doloremque reprehenderit quisquam quibusdam obcaecati maxime, expedita
-					libero facere maiores, magnam alias explicabo quo repudiandae? Quia
-					nam maiores recusandae expedita, aperiam fugiat excepturi atque
-					commodi inventore fuga officiis, consectetur culpa laboriosam, harum
-					mollitia magnam. Distinctio pariatur dolores saepe nesciunt.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis,
-					numquam quae nostrum ullam voluptatum distinctio maxime eos voluptate
-					ea ad quos repudiandae, deserunt non magni magnam pariatur,
-					perferendis aut libero incidunt similique aliquam error recusandae
-					provident modi. Dolorum, modi. Asperiores vel natus neque accusamus
-					iure officia quis amet. Expedita odit maiores debitis explicabo, odio
-					est? Ratione necessitatibus laboriosam officia debitis corrupti
-					doloremque reprehenderit quisquam quibusdam obcaecati maxime, expedita
-					libero facere maiores, magnam alias explicabo quo repudiandae? Quia
-					nam maiores recusandae expedita, aperiam fugiat excepturi atque
-					commodi inventore fuga officiis, consectetur culpa laboriosam, harum
-					mollitia magnam. Distinctio pariatur dolores saepe nesciunt.
-				</p>
+				<Profil />
+				<Informasi />
+				<Artikel />
+				<Media />
 			</main>
+
+			<footer className={styles.footer}>
+				<div className={styles.kontak}>
+					<p>Hubungi Kami</p>
+					<p>Jl. Mgr Soegijapranata No.1 55171 Bantul</p>
+				</div>
+			</footer>
 		</div>
 	);
 }

@@ -1,0 +1,14 @@
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.button {
+	margin-top: 0.5rem;
+	align-self: flex-end;
+	border: none;
+	background: white;
+	color: slategrey;
+	font-weight: bold;
+	cursor: pointer;
+}

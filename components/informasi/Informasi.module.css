@@ -1,0 +1,29 @@
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	text-align: center;
+  font-weight: bold;
+}
+
+.pengumuman {
+	background-color: rgba(210, 200, 150, 0.5);
+	margin: 0.3rem;
+  font-style: italic;;
+	padding: 1rem;
+}
+
+.jadwal {
+  background-color: rgba(200, 200, 200, 0.5);
+	margin: 0.3rem;
+  font-style: italic;;
+	padding: 1rem;
+}
+
+@media (min-width: 500px) {
+  .container {
+    flex-direction: row;
+  }
+}

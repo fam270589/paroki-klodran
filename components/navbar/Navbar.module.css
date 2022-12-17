@@ -20,6 +20,7 @@
 
 .menu {
   font-size: 0.8rem;
+	font-weight: bold;
   cursor: pointer;
 }
 
@@ -41,6 +42,8 @@
 }
 
 .menusMOpen {
+	display: flex;
+	flex-direction: column;
 	background: white;
 	text-align: right;
 	margin-top: 2rem;

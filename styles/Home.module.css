@@ -71,6 +71,21 @@
   cursor: pointer;
 }
 
+.footer {
+	width: 100vw;
+	height: 10rem;
+	background-color: rgba(200, 200, 200, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.9rem;
+}
+
+.kontak {
+	margin: 2rem;
+	text-align: center;
+}
+
 @media (min-width: 640px) {
 	.heroText {
 		font-size: 1.5rem;

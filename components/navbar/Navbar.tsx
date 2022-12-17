@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import { MdMenu, MdClose } from "react-icons/md";
 
@@ -32,19 +33,39 @@ const Navbar = (props: Props) => {
 					/>
 				)}
 				<div className={isMenuOpened ? styles.menusMOpen : styles.menusMClosed}>
-					<h5 className={styles.menu}>Profil</h5>
-					<h5 className={styles.menu}>Informasi</h5>
-					<h5 className={styles.menu}>Artikel</h5>
-					<h5 className={styles.menu}>Media</h5>
-					<h5 className={styles.menu}>Kontak</h5>
+					<Link href={"/profil"} className={styles.menu}>
+						Profil
+					</Link>
+					<Link href={"/informasi"} className={styles.menu}>
+						Informasi
+					</Link>
+					<Link href={"/artikel"} className={styles.menu}>
+						Artikel
+					</Link>
+					<Link href={"/media"} className={styles.menu}>
+						Media
+					</Link>
+					<Link href={"/kontak"} className={styles.menu}>
+						Kontak
+					</Link>
 				</div>
 			</div>
 			<div className={styles.menuDesktop}>
-				<h5 className={styles.menu}>Profil</h5>
-				<h5 className={styles.menu}>Informasi</h5>
-				<h5 className={styles.menu}>Artikel</h5>
-				<h5 className={styles.menu}>Media</h5>
-				<h5 className={styles.menu}>Kontak</h5>
+				<Link href={"/profil"} className={styles.menu}>
+					Profil
+				</Link>
+				<Link href={"/informasi"} className={styles.menu}>
+					Informasi
+				</Link>
+				<Link href={"/artikel"} className={styles.menu}>
+					Artikel
+				</Link>
+				<Link href={"/media"} className={styles.menu}>
+					Media
+				</Link>
+				<Link href={"/kontak"} className={styles.menu}>
+					Kontak
+				</Link>
 			</div>
 		</div>
 	);
